@@ -1,0 +1,6 @@
+:root{
+    --container-center: 0 auto;
+}
+*{
+    margin: var(--container-center);
+}
