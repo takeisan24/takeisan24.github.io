@@ -1,6 +1,6 @@
-[# BLT-CNTT4-K63](https://github.com/takeisan24/BLT-CNTT4-K63)
+# [BLT-CNTT4-K63](https://github.com/takeisan24/BLT-CNTT4-K63)
 *Website bài tập lớn của nhóm các bạn IT4 CNTT K63 làm thiết kế,...*
-**Cấu trúc bài tập lớn**
+# Cấu trúc bài tập lớn
 **I. Đề tài**
 > 1. Sơ lược về hệ thống
 > 2. Nghiệp vụ của hệ thống (giới thiệu bài toán)
