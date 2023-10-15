@@ -35,3 +35,5 @@
 > 1. Tự đánh giá điểm nhóm: Nhóm tự trao đổi, đánh giá điểm nhóm trên thang điểm 10 và trình bày rõ các tiêu chí và lý do đánh giá trong nhóm của mình trong báo cáo
 > 2. Từng cá nhân tự đánh giá điểm của các nhân mình và giải thích tiêu chí và lý do đánh giá đó trong báo cáo
 > 3. Nhóm tổ chức đánh giá điểm cho từng cá nhân và nhóm cũng giải thích tiêu trí và lý do đánh giá đó trong báo cáo
+
+> ==> link Web mẫu: https://vuongquocgamcao.com/?fbclid=IwAR1m2iB6Zu-OYQlAZENbXcnTKTntiuTkbnTHf7B4mlUllCQmvvDeQhHxKu8
