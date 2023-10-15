@@ -1,0 +1,16 @@
+body{
+    margin: 0 auto;
+}
+nav ul{
+    display: inline-flex;
+    list-style-type: none;
+}
+nav ul li{
+    background-color: aqua;
+}
+nav ul li a{
+    margin: 0 auto;
+    margin-right: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+}

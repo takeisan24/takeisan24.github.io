@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./src/statics/js/main.js",
-    "/index.html"
+    "./homepage.html"
   ],
   theme: {
     extend: {},
