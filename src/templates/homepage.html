@@ -13,41 +13,80 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon/favicon_car/favicon-16x16.png">
     <link rel="manifest" href="/src/favicon/favicon_car/site.webmanifest">
     <link rel="stylesheet" href="../themify-icons/themify-icons.css">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- CSS link -->
     <link rel="stylesheet" href="/src/statics/css/homepage.css">
     <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/78b1124a32.js" crossorigin="anonymous"></script>   
+    <script src="https://kit.fontawesome.com/78b1124a32.js" crossorigin="anonymous"></script> 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>  
     <!-- Tên trang web -->
     <title>DAK OF CAR</title>
 </head>
 <body>
     <!--Nhạc nền trang web-->
     <!--<audio src="/src/audio/background.mp3" loop autoplay></audio>-->
-    <div class="header">
-        <!-- Navigation -->
-        <nav>
-            <div class="logo">
-                <img class="section-logo" src="../image/logo.jpg" alt="logo">
+    <div class="main">
+        <div class="header">
+            <!-- Navigation -->
+            <nav>
+                <div class="logo">
+                    <img class="section-logo" src="../image/logo.jpg" alt="logo">
+                </div>
+                <ul class="text-align">
+                    <li>
+                        <a href="./homepage.html">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="./news.html">Tin tức</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Liên hệ</a>
+                    </li>
+                    <li>
+                        <a href="./address.html">Địa chỉ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="section-search">
+                <i class="search-icon ti-search"></i>
             </div>
-            <ul class="text-align">
-                <li>
-                    <a href="./homepage.html">HOME</a>
-                </li>
-                <li>
-                    <a href="./news.html">NEWS</a>
-                </li>
-                <li>
-                    <a href="./contact.html">CONTACT</a>
-                </li>
-                <li>
-                    <a href="./address.html">ADDRESS</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="section-search">
-            <i class="search-icon ti-search"></i>
+        </div>
+        <div class="slider">
+            <img class="nature" src="../image/car-1.jpg" >
+            <img class="nature" src="../image/car-2.jpg" >
+            <img class="nature" src="../image/car-3.jpg" >
+            <div class="text-content text-center">
+                <h3>Này em</h3>
+                <p>Dường tình anh thua</p>
+                <p>Dường đua anh không ngán</p>
+            </div>
+        </div>
+        <div id="content">
+            <div class="inforcation">
+                <div class="price">
+                    <h4>Khoảng giá</h4>
+                    <ul>
+                        <li>Dưới 500 triệu</li>
+                        <li>500-800 triệu</li>
+                        <li>Dưới 1 tỷ</li>
+                        <li>1 tỷ - 2 tỷ</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <h4>Năm sản xuất</h4>
+                    <ul>
+                        <li>2023</li>
+                        <li>2022</li>
+                        <li>2021</li>
+                        <li>2020</li>
+                        <li>2019</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-content">
+
+            </div>
         </div>
     </div>
     <!-- Footer-->
@@ -57,4 +96,7 @@
 </body>
 <!-- JS link -->
 <script src="./src/statics/js/main.js"></script>
+<script>
+    w3.slideshow(".nature", 1500);
+</script>
 </html>
