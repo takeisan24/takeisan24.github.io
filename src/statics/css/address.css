@@ -24,6 +24,15 @@ body {
     transform: translate(-50%);
     bottom: 150px;
 }
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 /* Logo Website */
 .section-logo {
     max-width: 100px;
