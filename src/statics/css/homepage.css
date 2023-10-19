@@ -11,12 +11,19 @@ body {
     background-image: linear-gradient(to right, #353232, #fff);
 }
 
-/* comon */
+/* Common */
 
 .text-center {
     text-align: center;
 }
 
+.text-content {
+    color: #fff;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 150px;
+}
 
 /**/
 
@@ -30,7 +37,7 @@ body {
     left: 0;
     right: 0;
 }
-
+/* Navigation*/
 nav{
     border: none;
     background-clip: padding-box;
@@ -68,7 +75,7 @@ nav ul li:hover {
     background-color: #212121;
     font-size: 18px;
 }
-
+/* Search Icon */
 .section-search .search-icon {
     float: right;
     color: #fff;
@@ -82,6 +89,8 @@ nav ul li:hover {
     cursor: pointer;
 }
 
+/* Slideshow Image */
+
 .slider {
     margin-top: 65.5px;
     height: 800px;
@@ -92,24 +101,18 @@ nav ul li:hover {
     height: 800px;
 }
 
-.text-content {
-    color: #fff;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 150px;
-}
+/* Content */
 
 #content {
     display: flex;
     margin-top: 8px;
 }
 
-#content .inforcation {
+#content .information {
     width: 15%;
     background-image: linear-gradient(to right, #272727, #4b4a4a);
 }
-
+/* Price */
 .price {
     color: #fff;
 }

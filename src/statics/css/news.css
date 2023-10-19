@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #353232, #fff);
+}
+
+/* Common */
+
+.text-center {
+    text-align: center;
+}
+
+.text-content {
+    color: #fff;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 150px;
+}
+/* Logo Website */
+.section-logo {
+    max-width: 100px;
+    height: 100%;
+}
+
+/* Navigation*/
+nav{
+    border: none;
+    background-clip: padding-box;
+    display: flex;
+    border: none;
+    float: left;
+}
+
+.section-logo {
+    max-width: 100px;
+    height: 100%;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 32px;
+}
+
+nav ul li{
+    padding: 0 20px;
+    margin: 0 4px;
+    line-height: 65.9px; 
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+nav ul li:hover {
+    background-color: #212121;
+    font-size: 18px;
+}
+
+/* Search Icon */
+.section-search .search-icon {
+    float: right;
+    color: #fff;
+    line-height: 65.9px;
+    padding: 0 25px;
+}
+
+.search-icon:hover {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
