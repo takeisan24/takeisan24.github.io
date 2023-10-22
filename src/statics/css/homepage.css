@@ -1,5 +1,6 @@
 *{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -105,12 +106,11 @@ nav ul li:hover {
 
 #content {
     display: flex;
-    margin-top: 8px;
+    margin-top: 25px;
 }
 
-#content .information {
-    width: 15%;
-    background-image: linear-gradient(to right, #272727, #4b4a4a);
+.inforcation {
+    width: 100%;
 }
 /* Price */
 .price {
@@ -118,21 +118,75 @@ nav ul li:hover {
 }
 
 .price h4 {
-    margin-left: 5px;
-    margin-top: 0;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(128, 22, 22);
 }
 
 .price ul {
-    padding-left: 16px;
-    margin: 15px 0;
-    margin-left: 25px;
-    line-height: 1.8;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
 }
 
-.price ul li:hover {
-    font-size: 16px;
-    color: #e6b96d;
+.price ul li a {
+    padding: 10px;
+    margin: 0 2px;
+    box-shadow: 1px 1px 1px #4a4848;
+    background-color: #ddd;
+    color: #5a5a5a;
     cursor: pointer;
+    text-decoration: none;
+}
+.price ul li:hover a {
+    color: #000;
+}
+
+.section-content {
+    display: flex;
+    justify-content: center;
+}
+
+.inforcation-car {
+    margin-top: 32px;
+}
+
+.inforcation-item {
+    padding: 6px 8px;
+    margin: 0 5px;
+    width: 22%;
+    background-color: #edecec;
+    background-clip: content-box;
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: 1px 1px 1px #c4c4c4;
+}
+
+.name-car {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 8px 8px;
+}
+
+.inforcation-item img {
+    width: 90%;
+    height: 150px;
+    border-radius: 5% /*bo tròn các góc của khối*/
+    
+}
+.price-car {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(155, 13, 13);
+    margin-top: -20px;
+}
+
+.section-icon {
+    color: rgb(155, 13, 13);
+    margin-right: 5px;
+    font-size: 18px;
 }
 
 
