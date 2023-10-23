@@ -26,6 +26,10 @@ body {
     bottom: 150px;
 }
 
+.content-top {
+    margin-top: 15px;
+}
+
 /**/
 
 /* main */
@@ -162,6 +166,7 @@ nav ul li:hover {
     text-align: center;
     border-radius: 10%;
     box-shadow: 1px 1px 1px #c4c4c4;
+    cursor: pointer;
 }
 
 .name-car {
@@ -172,10 +177,10 @@ nav ul li:hover {
 
 .inforcation-item img {
     width: 90%;
-    height: 150px;
-    border-radius: 5% /*bo tròn các góc của khối*/
-    
+    height: 180px;
+    border-radius: 5% /*bo tròn các góc của khối*/ 
 }
+
 .price-car {
     font-size: 25px;
     font-weight: 700;
@@ -188,6 +193,66 @@ nav ul li:hover {
     margin-right: 5px;
     font-size: 18px;
 }
+
+.Trustworthiness {
+    position: relative;
+    margin: 64px 0;
+}
+
+.Trustworthiness .bgr-img {
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 600px;
+}
+
+.Trustworthiness-lists{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    filter: drop-shadow(0.6em 0.6em 0.2em);
+}
+
+.Trustworthiness-header {
+    position: absolute;
+    color: rgb(184, 4, 4);
+    margin-top: 32px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.Trustworthiness-item {
+    width: 22%;
+    height: 50%;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 16px;
+    padding: 16px;
+}
+
+.Trustworthiness-item .tr-icon {
+    font-size: 80px;
+    color: rgb(184, 4, 4);
+}
+
+.Trustworthiness-item .slogan {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.sub-slogan {
+    font-weight: 500;
+}
+
+.slogan-top {
+    margin-top: -15px;
+}
+
+/* utilities */
 
 
 
