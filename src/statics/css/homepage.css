@@ -41,6 +41,8 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    display: flex;
+    align-items: center;
 }
 /* Navigation*/
 nav{
@@ -49,6 +51,7 @@ nav{
     display: flex;
     border: none;
     float: left;
+    width: 60%;
 }
 
 .section-logo {
@@ -81,16 +84,32 @@ nav ul li:hover {
     font-size: 18px;
 }
 /* Search Icon */
+.section-search {
+    width: 40%;
+    position: relative;
+}
+
+.section-search input {
+    margin-left: 32px;
+    width: 90%;
+    background-color: rgb(197 197 197 / 35%);
+    color: #fff!important;
+    border-radius: 15px;
+    padding: 6px 10px;
+    border: none;
+    position: relative;
+}
+
 .section-search .search-icon {
-    float: right;
     color: #fff;
-    line-height: 65.9px;
-    padding: 0 25px;
+    float: right;
+    position: absolute;
+    line-height: 22.5px;
+    padding: 5px;
+    right: 6%;
 }
 
 .search-icon:hover {
-    font-size: 20px;
-    color: red;
     cursor: pointer;
 }
 
@@ -214,15 +233,16 @@ nav ul li:hover {
     justify-content: center;
     align-items: center;
     height: 600px;
-    filter: drop-shadow(0.6em 0.6em 0.2em);
 }
 
 .Trustworthiness-header {
     position: absolute;
     color: rgb(184, 4, 4);
     margin-top: 32px;
+    margin-left: 140px;
     font-size: 40px;
     font-weight: 700;
+
 }
 
 .Trustworthiness-item {
@@ -254,6 +274,100 @@ nav ul li:hover {
 
 /* utilities */
 
+.utilities {
+    display: flex;
+    justify-content: center;
+    background-color: #edecec;
+    margin-top: -64px;
+    padding: 50px;
+
+}
+
+.section-utilities {
+    width: 40%;
+    margin-right: 40px;
+}
+
+.uti-header {
+    font-size: 30px;
+    font-weight: 600;
+    border-left: rgb(184, 4, 4) solid 5px;
+    padding-left: 16px;
+}
+
+.section-utilities .uti-lists {
+    display: flex;
+}
+
+.item {
+    padding: 32px 0;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    border-left: #ddd solid 2px;
+    border-right: #ddd solid 2px;
+    border-bottom: #ddd solid 2px;
+    background-color: #edecec;
+    text-align: center;
+    width: 25%;
+    cursor: pointer;
+    position: relative;
+}
+
+.item .fix-icon {
+    font-size: 35px;
+    color: rgb(184, 4, 4);
+}
+
+.item p {
+    margin-top: 18px;
+}
+
+.item .item-bottom {
+    background-color: rgb(184, 4, 4);
+    width: 50%;
+    height: 5px;
+    bottom: 0;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.5s;
+}
+
+.item:hover .item-bottom {
+    width: 100%;
+}
+
+.fix-contact {
+    width: 40%;
+}
+
+.fix-contact .sub-contact-hd {
+    font-size: 16px;
+}
+
+.section-input {
+    border: #a5a5a5 solid 2px;
+    padding: 6px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+
+.fix-contact button {
+    border: none;
+    background-color: red;
+    color: #fff;
+    padding: 8px 10px;
+    width: 30%;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.fix-contact button:hover {
+    background-color: rgb(184, 4, 4);
+}
 
 
 /* footer{
