@@ -23,12 +23,12 @@
     <title>Tin tức</title>
 </head>
 <body>
-    <div id="wrapper">
-        <header class="header">
+    <div class="wrapper">
+        <div class="header container-fluid">
             <!-- Navigation -->
-            <nav class="navbar justify-content-start">
+            <nav class="navbar navbar-expand-sm justify-content-start">
                 <div class="navbar-brand">
-                    <img class="section-logo" src="../image/logo.jpg" alt="logo">
+                    <a href="./homepage.html"><img class="section-logo" src="../image/logo.jpg" alt="logo"></a>
                 </div>
                 <ul class="text-center">
                     <li class="nav-item col-sm-4 col-md-4">
@@ -46,16 +46,18 @@
                 </ul>
             </nav>
             <div class="section-search">
+                <input type="text" name="search" placeholder="Tìm kiếm" id="search-tab" required>
                 <i class="search-icon ti-search"></i>
             </div>
-        </header>
-        <div>
-            <h1 class="text-body text-center">
-                <span id="page-title">Tin tức</span>
-            </h1>
+        </div>
+        <div class="content">
+            <div class="">
+                <h1>
+                    <span>Tin tức</span>
+                </h1>
+            </div>
         </div>
     </div>
-    
 </body>
 <script src="/src/statics/js/news.js"></script>
 </html>

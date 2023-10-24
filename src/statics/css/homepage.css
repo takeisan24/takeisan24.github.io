@@ -89,7 +89,7 @@ nav ul li:hover {
     position: relative;
 }
 
-.section-search input {
+#search-tab{
     margin-left: 32px;
     width: 90%;
     background-color: rgb(197 197 197 / 35%);

@@ -1,13 +1,12 @@
-html {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-div#wrapper{
+div.wrapper{
     background-image: linear-gradient(to right, #353232, #fff);
 }
 
 /* Common */
+body{
+    font-family: Arial, Helvetica, sans-serif;
 
+}
 .text-center {
     text-align: center;
 }
@@ -25,7 +24,7 @@ div#wrapper{
     height: 100%;
 }
 
-header.header {
+.header {
     position: fixed;
     width: 100%;
     background-color: #000;
@@ -71,7 +70,7 @@ nav ul li:hover {
     font-size: 18px;
 }
 
-/* Search Icon */
+/* Searching */
 .section-search .search-icon {
     float: right;
     color: #fff;
@@ -83,4 +82,14 @@ nav ul li:hover {
     font-size: 20px;
     color: red;
     cursor: pointer;
+}
+#search-tab{
+    margin-left: 32px;
+    width: 90%;
+    background-color: rgb(197 197 197 / 35%);
+    color: #fff!important;
+    border-radius: 15px;
+    padding: 6px 10px;
+    border: none;
+    position: relative;
 }

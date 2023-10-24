@@ -91,3 +91,13 @@ nav ul li:hover {
     color: red;
     cursor: pointer;
 }
+#search-tab{
+    margin-left: 32px;
+    width: 90%;
+    background-color: rgb(197 197 197 / 35%);
+    color: #fff!important;
+    border-radius: 15px;
+    padding: 6px 10px;
+    border: none;
+    position: relative;
+}
