@@ -28,7 +28,8 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <!-- JQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Tên trang web -->
     <title>DAK OF CAR</title>
 </head>
@@ -76,16 +77,16 @@
                     <h4>KHOẢNG GIÁ</h4>
                     <ul>
                         <li>
-                            <a href="#tab_duoi--500tr">Dưới 500 Triệu</a>
+                            <a id="btn1" href="#tab_duoi--500tr">Dưới 500 Triệu</a>
                         </li>
                         <li>
-                            <a href="#tab_500--800tr">500-800 Triệu</a>
+                            <a id="btn2" href="#tab_500--800tr">500-800 Triệu</a>
                         </li>
                         <li>
-                            <a href="#tab_duoi--1ty">Dưới 1 Tỷ</a>
+                            <a id="btn3" href="#tab_duoi--1ty">Dưới 1 Tỷ</a>
                         </li>
                         <li>
-                            <a href="#tab_1--2ty">1 Tỷ - 2 Tỷ</a>
+                            <a id="btn4" href="#tab_1--2ty">1 Tỷ - 2 Tỷ</a>
                         </li>
                     </ul>
                 </div>
@@ -94,7 +95,7 @@
                         <div class="information-item">
                             <p class="name-car">Ford ecosport 2021</p>
                             <img src="../image/Ford-ecosport-2021.jpg" alt="Ford-ecosport-2021">
-                            <div class="inforcation-car">
+                            <div class="information-car">
                                 <p class="price-car">600 Triệu</p>
                                 <p class="sub-heading">Trả trước chỉ từ 250 triệu</p>
                                 <p class="parameter"><i class="ti-calendar section-icon"></i>  2021</p>
@@ -124,7 +125,7 @@
                         <div class="information-item">
                             <p class="name-car">Toyota Fortuner 2013</p>
                             <img src="../image/Toyota-Fortuner-2013-16-768x576.jpg" alt="Toyota-Fortuner-2013">
-                            <div class="inforcation-car">
+                            <div class="information-car">
                                 <p class="price-car">450 Triệu</p>
                                 <p class="sub-heading">Trả trước chỉ từ 120 triệu</p>
                                 <p class="parameter"><i class="ti-calendar section-icon"></i>  2013</p>
@@ -146,7 +147,7 @@
                         <div class="information-item">
                             <p class="name-car">i10 2018</p>
                             <img src="../image/i10-2018.jpg" alt="i10-2018">
-                            <div class="inforcation-car">
+                            <div class="information-car">
                                 <p class="price-car">500 Triệu</p>
                                 <p class="sub-heading">Trả trước chỉ từ 200 triệu</p>
                                 <p class="parameter"><i class="ti-calendar section-icon"></i>  2018</p>
@@ -188,7 +189,7 @@
                         <div class="information-item">
                             <p class="name-car">Toyota Fortuner Legender 2021</p>
                             <img src="../image/Toyota-Fortuner-Legender-2021.jpg" alt="Toyota-Fortuner-Legender-2021">
-                            <div class="inforcation-car">
+                            <div class="information-car">
                                 <p class="price-car">850 Triệu</p>
                                 <p class="sub-heading">Trả trước chỉ từ 400 triệu</p>
                                 <p class="parameter"><i class="ti-calendar section-icon"></i>  2020</p>
@@ -250,7 +251,7 @@
                         <div class="information-item">
                             <p class="name-car">Toyota Fortuner 2020</p>
                             <img src="../image/Toyota-Fortuner-2020.jpg" alt="Toyota-Fortuner-2020">
-                            <div class="inforcation-car">
+                            <div class="information-car">
                                 <p class="price-car">1 Tỷ 100 Triệu</p>
                                 <p class="sub-heading">Trả trước chỉ từ 650 triệu</p>
                                 <p class="parameter"><i class="ti-calendar section-icon"></i>  2020</p>
@@ -293,23 +294,23 @@
                         <div class="util-header">
                             <p>TIỆN ÍCH DÀNH CHO BẠN</p>
                         </div>
-                        <div class="util-lists">
-                            <div class="item">
+                        <div class="util-lists row-cols-3">
+                            <div class="item col-3">
                                 <i class="ti-search fix-icon"></i>
                                 <p>Tìm xe</p>
                                 <div class="item-bottom"></div>
                             </div>
-                            <div class="item">
+                            <div class="item col-3">
                                 <i class="ti-car fix-icon"></i>
                                 <p>Yêu cầu đặt xe</p>
                                 <div class="item-bottom"></div>
                             </div>
-                            <div class="item">
+                            <div class="item col-3">
                                 <i class="ti-thumb-up fix-icon"></i>
                                 <p>Ký gửi xe</p>
                                 <div class="item-bottom"></div>
                             </div>
-                            <div class="item">
+                            <div class="item col-3">
                                 <i class="ti-truck fix-icon"></i>
                                 <p>Đổi xe</p>
                                 <div class="item-bottom"></div>
@@ -320,8 +321,16 @@
                         <p class="util-header">NHẬN TƯ VẤN</p>
                         <p class="sub-contact-hd">Quý khách vui lòng để lại thông tin, đội ngũ tư vấn viên của DAK OF CAR HÀ NỘI sẽ liên hệ và tư vấn trực tiếp.</p>
                         <div class="lists-input">
-                            <input type="text" name="" required placeholder="Họ tên..." id="" class="section-input">
-                            <input type="text" name="" required placeholder="Số điện thoại" id="" class="section-input">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <input type="text" name="" required placeholder="Họ tên..." id="" class="section-input">
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" name="" required placeholder="Số điện thoại" id="" class="section-input">
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                         <button>Yêu cầu tư vấn</button>
                     </div>
