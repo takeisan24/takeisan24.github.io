@@ -132,7 +132,7 @@ nav ul li:hover {
     margin-top: 25px;
 }
 
-.inforcation {
+.information {
     width: 100%;
 }
 /* Price */
@@ -172,11 +172,11 @@ nav ul li:hover {
     justify-content: center;
 }
 
-.inforcation-car {
+.information-car {
     margin-top: 32px;
 }
 
-.inforcation-item {
+.information-item {
     padding: 6px 8px;
     margin: 0 5px;
     width: 22%;
@@ -194,7 +194,7 @@ nav ul li:hover {
     padding: 8px 8px;
 }
 
-.inforcation-item img {
+.information-item img {
     width: 90%;
     height: 180px;
     border-radius: 5% /*bo tròn các góc của khối*/ 
@@ -288,14 +288,14 @@ nav ul li:hover {
     margin-right: 40px;
 }
 
-.uti-header {
+.util-header {
     font-size: 30px;
     font-weight: 600;
     border-left: rgb(184, 4, 4) solid 5px;
     padding-left: 16px;
 }
 
-.section-utilities .uti-lists {
+.section-utilities .util-lists {
     display: flex;
 }
 
@@ -403,7 +403,7 @@ nav ul li:hover {
 }
 
 .address p i {
-    font-weight: 700;
+    font-weight: bold;
     margin-right: 10px;
 }
 
@@ -411,6 +411,7 @@ nav ul li:hover {
     width: 20%;
     color: #fff;
     margin-top: 64px;
+    font-weight: bold;
 }
 
 .policy p {

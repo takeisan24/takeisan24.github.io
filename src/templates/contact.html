@@ -1,74 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Thẻ meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Quản lý ô tô cho showroom">
+    <meta name="keywords" content="">
+    
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/src/favicon/favicon_car/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon/favicon_car/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon/favicon_car/favicon-16x16.png">
     <link rel="manifest" href="/src/favicon/favicon_car/site.webmanifest">
 
+
     <!-- CSS link -->
     <link rel="stylesheet" href="../themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/src/statics/css/contact.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/78b1124a32.js" crossorigin="anonymous"></script> 
+
+    <!-- Bootstrap 5 link -->
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Liên hệ tới chúng tôi</title>
-    
+
+    <!-- Tên trang web -->
+    <title>DAK OF CAR</title>
 </head>
 <body>
-    <div class="header">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-sm justify-content-start">
-            <div class="navbar-brand">
-                <img class="section-logo" src="../image/logo.jpg" alt="logo">
+    <div class="main">
+        <div class="header container-fluid">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-sm justify-content-start">
+                <div class="navbar-brand">
+                    <img class="section-logo" src="../image/logo.jpg" alt="logo">
+                </div>
+                <ul class="text-center">
+                    <li class="nav-item col-sm-4 col-md-4">
+                        <a class="nav-link text-white" href="./homepage.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item col-sm-4 col-md-4">
+                        <a class="nav-link text-white" href="./news.html">Tin tức</a>
+                    </li>
+                    <li class="nav-item col-sm-4 col-md-4">
+                        <a class="nav-link text-white" href="./contact.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item col-sm-4 col-md-4">
+                        <a class="nav-link text-white" href="./address.html">Địa chỉ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="section-search">
+                <input type="text" name="" required placeholder="Tìm kiếm....." id="search-tab">
+                <i class="search-icon ti-search"></i>
             </div>
-            <ul class="text-center">
-                <li class="nav-item col-sm-4 col-md-4">
-                    <a class="nav-link text-white" href="./homepage.html">Trang chủ</a>
-                </li>
-                <li class="nav-item col-sm-4 col-md-4">
-                    <a class="nav-link text-white" href="./news.html">Tin tức</a>
-                </li>
-                <li class="nav-item col-sm-4 col-md-4">
-                    <a class="nav-link text-white" href="./contact.html">Liên hệ</a>
-                </li>
-                <li class="nav-item col-sm-4 col-md-4">
-                    <a class="nav-link text-white" href="./address.html">Địa chỉ</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="section-search">
-            <input type="text" name="" required placeholder="Tìm kiếm....." id="search-tab">
-            <i class="search-icon ti-search"></i>
+        </div>
+        <div id="content">
+            <div class="inforcation">
+                <div class="contact-map">
+                    <img src="../image/map.jpg" alt="map">
+                </div>
+                <div class="contact-content">
+                    <div class="section-infor-contact">
+                        <p class="uti-header">CÔNG TY TNHH DAK OF CAR VIỆT NAM</p>
+                        <p class="sub-contact-hd">Quý khách vui lòng để lại thông tin, đội ngũ tư vấn viên của DAK OF CAR HÀ NỘI sẽ liên hệ và tư vấn trực tiếp</p>
+                        <div class="ct-infor-item">
+                            <div class="item-icon">
+                                <i class="ti-location-pin"></i>
+                            </div>
+                            <div class="item-text">
+                                <h4>Showroom</h4>
+                                <p>26 đường Cầu Diễn, phường Phú Diễn, Bắc Từ Liêm, Hà Nội</p>
+                            </div>
+                        </div>
+                        <div class="ct-infor-item">
+                            <div class="item-icon">
+                                <i class="ti-headphone-alt"></i>
+                            </div>
+                            <div class="item-text">
+                                <h4>Hotline 24/7</h4>
+                                <p>0999.999.999</p>
+                            </div>
+                        </div>
+                        <div class="ct-infor-item">
+                            <div class="item-icon">
+                                <i class="ti-email"></i>
+                            </div>
+                            <div class="item-text">
+                                <h4>Email</h4>
+                                <p>dakofcar@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-contact">
+                        <p class="uti-header">GỬI LIÊN HỆ</p>
+                        <h5>Tên của bạn</h5>
+                        <input type="text" name="" required placeholder="" id="" class="section-input">
+                        <h5>Email</h5>
+                        <input type="text" name="" required placeholder="" id="" class="section-input">
+                        <h5>Tiêu đề:</h5>
+                        <input type="text" name="" required placeholder="" id="" class="section-input">
+                        <h5>Nội dung liên hệ</h5>
+                        <input type="text" name="" required placeholder="" id="" class="section-input">
+                        <button>Gửi</button>
+                    </div>
+                </div>
+                <div class="Trustworthiness">
+                    <img class="bgr-img" src="../image/th.jpeg" alt="anh-nen">
+                    <div class="Trustworthiness-header">
+                        <p>TẠI SAO DAK OF CAR LÀ ĐỊA CHỈ MUA XE CŨ ĐÁNG TIN CẬY?</p>
+                    </div>
+                    <div class="Trustworthiness-lists">
+                        <div class="Trustworthiness-item">
+                            <p><i class="ti-receipt tr-icon"></i></p>
+                            <p class="slogan">Pháp lý rõ ràng</p>
+                            <p class="slogan slogan-top">Sang tên nhanh gọn</p>
+                            <p class="sub-slogan">Cam kết xe cung cấp tới khách hàng đều có đầy đủ hồ sơ pháp lý rõ ràng, quy trình sang tên nhanh gọn.</p>
+                        </div>
+                        <div class="Trustworthiness-item">
+                            <p><i class="ti-thumb-up tr-icon"></i></p>
+                            <p class="slogan">Quy trình nhập xe nghiêm ngặt</p>
+                            <div class="sub-slogan">Toàn bộ xe nhập về showroom đều được kiểm định khắt khe bởi chuyên gia hơn 10 năm kinh nghiệm.</div>
+                        </div>
+                        <div class="Trustworthiness-item">
+                            <p><i class="ti-car tr-icon"></i></p>
+                            <p class="slogan">Hỗ trợ giao xe toàn quốc</p>
+                            <div class="sub-slogan">Quý khách hàng ở tỉnh, thành phố khác ngoài Hà Nội đều được hỗ trợ xem xe và giao xe tận nơi bởi Bcar.</div>
+                        </div>
+                        <div class="Trustworthiness-item">
+                            <p><i class="ti-money tr-icon"></i></p>
+                            <p class="slogan">Hỗ trợ trả góp lên tới 70%</p>
+                            <div class="sub-slogan">Quý khách có thể sở hữu ngay chiếc xe yêu thích của mình chỉ từ 30% giá trị xe với thủ tục trả góp nhanh chóng.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="utilities">
+                    <div class="section-utilities">
+                        <div class="uti-header">
+                            <p>TIỆN ÍCH DÀNH CHO BẠN</p>
+                        </div>
+                        <div class="uti-lists">
+                            <div class="item">
+                                <i class="ti-search fix-icon"></i>
+                                <p>Tìm xe</p>
+                                <div class="item-bottom"></div>
+                            </div>
+                            <div class="item">
+                                <i class="ti-car fix-icon"></i>
+                                <p>Yêu cầu đặt xe</p>
+                                <div class="item-bottom"></div>
+                            </div>
+                            <div class="item">
+                                <i class="ti-thumb-up fix-icon"></i>
+                                <p>Ký gửi xe</p>
+                                <div class="item-bottom"></div>
+                            </div>
+                            <div class="item">
+                                <i class="ti-truck fix-icon"></i>
+                                <p>Đổi xe</p>
+                                <div class="item-bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fix-contact">
+                        <p class="uti-header">NHẬN TƯ VẤN</p>
+                        <p class="sub-contact-hd">Quý khách vui lòng để lại thông tin, đội ngũ tư vấn viên của DAK OF CAR HÀ NỘI sẽ liên hệ và tư vấn trực tiếp.</p>
+                        <div class="lists-input">
+                            <input type="text" name="" required placeholder="Họ tên..." id="" class="section-input">
+                            <input type="text" name="" required placeholder="Số điện thoại" id="" class="section-input">
+                        </div>
+                        <button>Yêu cầu tư vấn</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footer-content">
+                        <div class="address">
+                            <img src="../image/logo.jpg" alt="logo">
+                            <h4>DAK OF CAR HÀ NỘI - VƯƠNG QUỐC GẦM CAO</h4>
+                            <p><i class="ti-location-pin"></i>26 đường Cầu Diễn, phường Phú Diễn, quận Bắc Từ Liêm, Hà Nội</p>
+                            <p><i class="ti-email"></i> dakofcar@gmail.com</p>
+                            <p><i class="ti-headphone-alt"></i> Hotline: 0999. 999. 999</p>
+                        </div>
+                        <div class="policy">
+                            <h3>CHÍNH SÁCH</h3>
+                            <p>Chính sách thanh toán</p>
+                            <p>Chính sách bảo hành</p>
+                            <p>Chính sách giao nhận vận chuyển</p>
+                            <p>Chính sách bảo mật thông tin</p>
+                            <p>Điều kiện và điều khoản</p>
+                        </div>
+                        <div class="map">
+                            <img src="../image/map.jpg" alt="map">
+                        </div>
+                    </div>
+                    <div class="footer-ct-bottom">
+                        <p>Công Ty TNHH Dak of Car Việt Nam</p>
+                        <p>Đại Diện: Lê Trung Kiên.</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright 2023 © Dak of Car - <a href="https://vuongquocgamcao.com/?fbclid=IwAR1m2iB6Zu-OYQlAZENbXcnTKTntiuTkbnTHf7B4mlUllCQmvvDeQhHxKu8">Thiết kế bởi Weboto.com.vn</a></p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="form">
-        <h2>
-            <span>Gửi liên hệ</span>
-        </h2>
-        <form action="">
-            <label for="name">Tên của bạn</label><br>
-            <input type="text" name="name" id="name"><br>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <label for="title">Tiêu đề</label>
-            <input type="text" name="title" id="title">
-            <label for="content">Nội dung liên hệ</label>
-            <textarea name="content" id="content" cols="30" rows="10"></textarea>
-        </form>
-    </div>
-
-
-    <!-- Footer-->
-    <footer>
-       Copyright 2023 &copy; 
-    </footer>
 </body>
-<script src="/src/statics/js/contact.js"></script>
+<!-- JS link -->
+<script src="https://www.w3schools.com/lib/w3.js"></script>  
+<script src="/src/statics/js/homepage.js"></script>
 </html>

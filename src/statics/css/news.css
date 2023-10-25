@@ -229,6 +229,10 @@ nav ul li:hover {
     font-weight: 500;
 }
 
+.contact-img button:hover {
+    background-color: red;
+}
+
 
 .section-contact .contact-text {
     margin-top: 32px;
