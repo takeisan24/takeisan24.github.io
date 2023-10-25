@@ -403,7 +403,7 @@ nav ul li:hover {
 }
 
 .address p i {
-    font-weight: 700;
+    font-weight: bold;
     margin-right: 10px;
 }
 
@@ -411,6 +411,7 @@ nav ul li:hover {
     width: 20%;
     color: #fff;
     margin-top: 64px;
+    font-weight: bold;
 }
 
 .policy p {
@@ -422,11 +423,6 @@ nav ul li:hover {
 .footer-content .map {
     margin-top: 64px;
     width: 30%;
-}
-
-.map img {
-    width: 100%;
-    height: 80%;
 }
 
 .footer .footer-ct-bottom {
