@@ -349,7 +349,7 @@ nav ul li:hover {
     border-radius: 5px;
 }
 
-#submit{
+.submit{
     border: none;
     background-color: red;
     color: #fff;
@@ -360,7 +360,7 @@ nav ul li:hover {
     font-weight: 500;
 }
 
-#submit:hover {
+.submit:hover {
     background-color: rgb(184, 4, 4);
 }
 

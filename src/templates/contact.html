@@ -17,7 +17,6 @@
 
     <!-- CSS link -->
     <link rel="stylesheet" href="../themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/src/statics/css/contact.css">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/78b1124a32.js" crossorigin="anonymous"></script> 
@@ -30,29 +29,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Tên trang web -->
-    <title>DAK OF CAR</title>
+    <title>Liên hệ - DAK OF CAR</title>
 </head>
 <body>
     <div class="main">
         <div class="header container-fluid">
             <!-- Navigation -->
-            <nav class="navbar navbar-expand-sm justify-content-start col-6">
+            <nav class="navbar navbar-expand-sm justify-content-start">
                 <div class="navbar-brand">
                     <img class="section-logo" src="../image/logo.jpg" alt="logo">
                 </div>
                 <ul class="text-center row">
-                    <li class="nav-item col-sm-3 col-md-3">
+                    <li class="nav-item col-sm-5">
                         <a class="nav-link text-white" href="./homepage.html">Trang chủ</a>
                     </li>
-                    <li class="nav-item col-sm-3 col-md-3">
+                    <li class="nav-item col-sm-5">
                         <a class="nav-link text-white" href="./news.html">Tin tức</a>
                     </li>
-                    <li class="nav-item col-sm-3 col-md-3">
+                    <li class="nav-item col-sm-5">
                         <a class="nav-link text-white" href="./contact.html">Liên hệ</a>
                     </li>
                 </ul>
             </nav>
-            <div class="section-search col-6">
+            <div class="section-search">
                 <input type="text" name="" required placeholder="Tìm kiếm....." id="search-tab">
                 <i class="search-icon ti-search"></i>
             </div>
@@ -96,40 +95,42 @@
                     </div>
                     <div class="section-contact">
                         <p class="uti-header">GỬI LIÊN HỆ</p>
-                        <h5>Tên của bạn</h5>
-                        <input type="text" name="" required placeholder="" id="" class="section-input">
-                        <h5>Email</h5>
-                        <input type="text" name="" required placeholder="" id="" class="section-input">
-                        <h5>Tiêu đề:</h5>
-                        <input type="text" name="" required placeholder="" id="" class="section-input">
-                        <h5>Nội dung liên hệ</h5>
-                        <input type="text" name="" required placeholder="" id="" class="section-input">
-                        <button>Gửi</button>
+                        <form name="sendContact" action="#" onsubmit="return sendContactValidate()" method="post">
+                            <label for="yname">Tên của bạn</label>
+                            <input type="text" name="yname" required placeholder="Nguyễn Văn A" id="" class="section-input">
+                            <label for="">Email</label>
+                            <input type="text" name="email" required placeholder="example@gmail.com" id="" class="section-input">
+                            <label for="">Tiêu đề</label>
+                            <input type="text" name="title" required placeholder="Tiêu đề" id="" class="section-input">
+                            <label for="">Nội dung liên hệ</label>
+                            <input class="section-input" type="text" name="content" required placeholder="Nội dung">
+                        </form>
+                        <input id="submit" type="submit" value="Gửi" onclick="sendContactValidate(), validateMail(document.sendContact.email)">
                     </div>
                 </div>
-                <div class="Trustworthiness">
+                <div class="row Trustworthiness">
                     <img class="bgr-img" src="../image/th.jpeg" alt="anh-nen">
                     <div class="Trustworthiness-header">
                         <p>TẠI SAO DAK OF CAR LÀ ĐỊA CHỈ MUA XE CŨ ĐÁNG TIN CẬY?</p>
                     </div>
-                    <div class="Trustworthiness-lists">
-                        <div class="Trustworthiness-item">
+                    <div class="row Trustworthiness-lists">
+                        <div class="col-sm-2 col-md-2 Trustworthiness-item">
                             <p><i class="ti-receipt tr-icon"></i></p>
                             <p class="slogan">Pháp lý rõ ràng</p>
                             <p class="slogan slogan-top">Sang tên nhanh gọn</p>
                             <p class="sub-slogan">Cam kết xe cung cấp tới khách hàng đều có đầy đủ hồ sơ pháp lý rõ ràng, quy trình sang tên nhanh gọn.</p>
                         </div>
-                        <div class="Trustworthiness-item">
+                        <div class="col-sm-2 col-md-2 Trustworthiness-item">
                             <p><i class="ti-thumb-up tr-icon"></i></p>
                             <p class="slogan">Quy trình nhập xe nghiêm ngặt</p>
                             <div class="sub-slogan">Toàn bộ xe nhập về showroom đều được kiểm định khắt khe bởi chuyên gia hơn 10 năm kinh nghiệm.</div>
                         </div>
-                        <div class="Trustworthiness-item">
+                        <div class="col-sm-2 col-md-2 Trustworthiness-item">
                             <p><i class="ti-car tr-icon"></i></p>
                             <p class="slogan">Hỗ trợ giao xe toàn quốc</p>
                             <div class="sub-slogan">Quý khách hàng ở tỉnh, thành phố khác ngoài Hà Nội đều được hỗ trợ xem xe và giao xe tận nơi bởi Bcar.</div>
                         </div>
-                        <div class="Trustworthiness-item">
+                        <div class="col-sm-2 col-md-2 Trustworthiness-item">
                             <p><i class="ti-money tr-icon"></i></p>
                             <p class="slogan">Hỗ trợ trả góp lên tới 70%</p>
                             <div class="sub-slogan">Quý khách có thể sở hữu ngay chiếc xe yêu thích của mình chỉ từ 30% giá trị xe với thủ tục trả góp nhanh chóng.</div>
@@ -138,10 +139,10 @@
                 </div>
                 <div class="utilities">
                     <div class="section-utilities">
-                        <div class="uti-header">
+                        <div class="util-header">
                             <p>TIỆN ÍCH DÀNH CHO BẠN</p>
                         </div>
-                        <div class="uti-lists">
+                        <div class="util-lists">
                             <div class="item">
                                 <i class="ti-search fix-icon"></i>
                                 <p>Tìm xe</p>
@@ -165,13 +166,21 @@
                         </div>
                     </div>
                     <div class="fix-contact">
-                        <p class="uti-header">NHẬN TƯ VẤN</p>
+                        <p class="util-header">NHẬN TƯ VẤN</p>
                         <p class="sub-contact-hd">Quý khách vui lòng để lại thông tin, đội ngũ tư vấn viên của DAK OF CAR HÀ NỘI sẽ liên hệ và tư vấn trực tiếp.</p>
                         <div class="lists-input">
-                            <input type="text" name="" required placeholder="Họ tên..." id="" class="section-input">
-                            <input type="text" name="" required placeholder="Số điện thoại" id="" class="section-input">
+                            <form name="form1" action="#" onsubmit="return(validate())" method="get">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <input class="section-input" type="text" name="hoten"  placeholder="Họ tên" id="name" required>
+                                    </div>
+                                    <div class="col-5">
+                                        <input class="section-input" type="text" name="tel"  placeholder="Số điện thoại" id="tel"  required>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <button>Yêu cầu tư vấn</button>
+                        <input class="submit" type="submit" name="submit" value="Yêu cầu tư vấn" onclick="validate(), PhoneNumber(document.form1.tel)">
                     </div>
                 </div>
                 <div class="footer">
@@ -192,7 +201,7 @@
                             <p>Điều kiện và điều khoản</p>
                         </div>
                         <div class="map">
-                            <img src="../image/map.jpg" alt="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.7452634728297!2d105.75673775075796!3d21.04287628592204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345560ae788aa7%3A0x4c658f950ffb72ca!2zU2nDqnUgVGjhu4sgw5QgVMO0IEJDYXIgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1649730687612!5m2!1svi!2s" width="400" height="250" frameborder="0" allowfullscreen referrerpolicy="no-referrer-when-downgrade" data-ll-status="loaded"></iframe>
                         </div>
                     </div>
                     <div class="footer-ct-bottom">
@@ -209,5 +218,5 @@
 </body>
 <!-- JS link -->
 <script src="https://www.w3schools.com/lib/w3.js"></script>  
-<script src="/src/statics/js/homepage.js"></script>
+<script src="/src/statics/js/contact.js"></script>
 </html>

@@ -31,7 +31,7 @@
     <!-- JQuery link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Tên trang web -->
-    <title>DAK OF CAR</title>
+    <title>Trang chủ - DAK OF CAR</title>
 </head>
 <body>
     <div class="main">
@@ -54,7 +54,7 @@
                 </ul>
             </nav>
             <div class="section-search col-sm">
-                <input type="text" name="" required placeholder="Tìm kiếm....." id="search-tab">
+                <input type="text" name="search-bar" required placeholder="Tìm kiếm" id="search-tab">
                 <i class="search-icon ti-search"></i>
             </div>
         </div>
@@ -320,30 +320,28 @@
                         <div class="lists-input">
                             <form name="form1" action="#" onsubmit="return(validate())" method="get">
                                 <div class="row">
-                                    <div class="form-floating col-5">
-                                        <input class="form-control section-input" type="text" name="name" required placeholder="Họ tên..." id="name" >
-                                        <label class="form-label" for="name">Họ tên:</label>
+                                    <div class="col-5">
+                                        <input class="section-input" type="text" name="hoten"  placeholder="Họ tên" id="name" required>
                                     </div>
-                                    <div class="form-floating col-5">
-                                        <input type="text" name="tel" required placeholder="Số điện thoại" id="tel" class="form-control section-input">
-                                        <label for="tel">Số điện thoại:</label>
+                                    <div class="col-5">
+                                        <input class="section-input" type="text" name="tel"  placeholder="Số điện thoại" id="tel"  required>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <input id="submit" type="submit" name="submit" value="Yêu cầu tư vấn" onclick="validate(), PhoneNumber(document.form1.tel)">
+                        <input class="submit" type="submit" name="submit" value="Yêu cầu tư vấn" onclick="validate(), PhoneNumber(document.form1.tel)">
                     </div>
                 </div>
                 <div class="footer">
-                    <div class="footer-content">
-                        <div class="address">
-                            <img src="../image/logo.jpg" alt="logo">
+                    <div class="footer-content row">
+                        <div class="address col-sm-3">
+                            <img class="" src="../image/logo.jpg" alt="logo">
                             <h4>DAK OF CAR HÀ NỘI - VƯƠNG QUỐC GẦM CAO</h4>
                             <p><i class="ti-location-pin"></i>26 đường Cầu Diễn, phường Phú Diễn, quận Bắc Từ Liêm, Hà Nội</p>
                             <p><i class="ti-email"></i> dakofcar@gmail.com</p>
                             <p><i class="ti-headphone-alt"></i> Hotline: 0999. 999. 999</p>
                         </div>
-                        <div class="policy">
+                        <div class="policy border-info col-sm-3">
                             <h3>CHÍNH SÁCH</h3>
                             <p>Chính sách thanh toán</p>
                             <p>Chính sách bảo hành</p>
@@ -351,8 +349,8 @@
                             <p>Chính sách bảo mật thông tin</p>
                             <p>Điều kiện và điều khoản</p>
                         </div>
-                        <div class="map">
-                            <img src="../image/map.jpg" alt="map">
+                        <div class="map col-sm-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.7452634728297!2d105.75673775075796!3d21.04287628592204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345560ae788aa7%3A0x4c658f950ffb72ca!2zU2nDqnUgVGjhu4sgw5QgVMO0IEJDYXIgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1649730687612!5m2!1svi!2s" width="400" height="250" frameborder="0" allowfullscreen referrerpolicy="no-referrer-when-downgrade" data-ll-status="loaded"></iframe>
                         </div>
                     </div>
                     <div class="footer-ct-bottom">
