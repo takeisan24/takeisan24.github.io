@@ -30,5 +30,33 @@ $(document).ready(function(){
     })
 })
 /* Nhận tư vấn */
+const ten = document.forms["form1"]["name"].value;
+const sdt = document.forms["form1"]["tel"].value;
+function validate(){
+    if(ten == ""){
+        alert("Vui lòng nhập họ tên đầy đủ!");
+        document.forms["form1"]["name"].focus();
+        return false;
+    }
+    if(sdt == ""){
+        alert("Vui lòng nhập số điện thoại!");
+        document.forms["form1"]["tel"].focus();
+        return false;
+    }
+}
+function PhoneNumber(inputtxt)
+{
+  var phoneno = /^\(?([0-9]{4})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{3})$/;
+  if(inputtxt.value.match(phoneno))
+     {
+        alert('Valid phone number');
+	    return true;
+	 }
+   else
+     {
+	   alert("Not a valid Phone Number");
+	   return false;
+     }
+}
 
 
